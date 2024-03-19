@@ -1,5 +1,5 @@
 # Faster R-CNN
-![image](https://github.com/ycbkr123/Faster-R-CNN-pytorch/assets/73626645/8c2cb0d9-126a-4b20-891f-0f3da5492db1)
+![image](https://github.com/ycbkr123/Faster-R-CNN-pytorch/assets/73626645/5671abfb-fd08-4ecf-986e-73040d12cf4b)
 
 후보 영역 추출을 위해 사용되는 Selective search 알고리즘은 CPU 상에서 동작하고 이로 인해 네트워크에서 병목현상이 발생하게 된다. 
 Faster R-CNN은 이러한 문제를 해결하고자 후보 영역 추출 작업을 수행하는 네트워크인 Region Proposal Network(RPN)를 도입한다. 
@@ -9,6 +9,8 @@ RPN에서 region proposals를 추출하고 이를 Fast R-CNN 네트워크에 전
 이를 통해 모델의 전체 과정이 GPU 상에서 동작하여 병목 현상이 발생하지 않으며, end-to-end로 네트워크를 학습시키는 것이 가능해집니다. 
 
  # 동작 순서
+![image](https://github.com/ycbkr123/Faster-R-CNN-pytorch/assets/73626645/3c02f0d3-8fbb-4038-937e-fe7cde805e07)
+ 
 * 원본 이미지를 pre-trained된 CNN 모델에 입력하여 feature map을 얻습니다.
 * feature map은 RPN에 전달되어 적절한 region proposals을 산출합니다.
 * region proposals와 1) 과정에서 얻은 feature map을 통해 RoI pooling을 수행하여 고정된 크기의 feature map을 얻습니다. 
