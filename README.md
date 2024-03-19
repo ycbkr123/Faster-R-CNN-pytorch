@@ -14,7 +14,7 @@ RPN에서 region proposals를 추출하고 이를 Fast R-CNN 네트워크에 전
 * region proposals와 1) 과정에서 얻은 feature map을 통해 RoI pooling을 수행하여 고정된 크기의 feature map을 얻습니다. 
 * Fast R-CNN 모델에 고정된 크기의 feature map을 입력하여 Classification과 Bounding box regression을 수행합니다.
 
-  **RPN(Region Proposal Networks)**
+## RPN(Region Proposal Networks)
  ![image](https://github.com/ycbkr123/Faster-R-CNN-pytorch/assets/73626645/da690084-8d49-4df0-a1a0-b37255867ff4)
 
 RPN(Region Proposal Networks)은 크기에 상관없이 이미지 전체를 입력받는다. 그다음 영역 추정 경계 박스를 반환한다. 
