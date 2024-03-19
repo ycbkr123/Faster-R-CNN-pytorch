@@ -21,5 +21,5 @@ RPN(Region Proposal Networks)은 크기에 상관없이 이미지 전체를 입�
 각 경계 박스는 객체가 있는지 여부를 점수로 나타낸다. 이런 RPN을 합성곱 네트워크로 처리하도록 만들었다. RPN과 Fast R-CNN 객체 탐지기는 피처 맵을 공유한다
 
 # CODE
-train.py코드는 torchvision에서 제공한 fasterrcnn_resnet50_fpn 모델로 학습한 것으로, 다른 코드들과는 다르게 yolo 형식의 좌표를 pascal VOC형식으로 변환 함수가 있다.
-test.py코드는 train.py를 통해 얻은 best_model.pt파일을 사용하여 mAP, 각 Class별 AP값을 구한다. 또한 result.csv 파일 형식으로 결과가 저장되도록 설계하였다.
+* train.py코드는 torchvision에서 제공한 fasterrcnn_resnet50_fpn 모델로 학습한 것으로, 다른 코드들과는 다르게 yolo 형식의 좌표를 pascal VOC형식으로 변환 함수가 있다.
+* test.py코드는 train.py를 통해 얻은 best_model.pt파일을 사용하여 mAP, 각 Class별 AP값을 구한다. 또한 result.csv 파일 형식으로 결과가 저장되도록 설계하였다.
